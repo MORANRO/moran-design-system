@@ -1,14 +1,17 @@
 /* Base */
 .button {
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-mono);
   font-weight: var(--font-weight-semibold);
-  border-radius: var(--radius-md);
-  border: 2px solid transparent;
+  font-size: var(--font-size-sm);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: var(--radius-lg);
+  border: 1px solid transparent;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
 }
 
 .button:disabled {
@@ -18,21 +21,19 @@
 
 /* Sizes */
 .sm {
-  font-size: var(--font-size-sm);
-  padding: var(--spacing-1) var(--spacing-3);
-}
-
-.md {
-  font-size: var(--font-size-base);
   padding: var(--spacing-2) var(--spacing-4);
 }
 
-.lg {
-  font-size: var(--font-size-lg);
-  padding: var(--spacing-3) var(--spacing-6);
+.md {
+  padding: 10px var(--spacing-6);
 }
 
-/* Primary */
+.lg {
+  padding: var(--spacing-3) var(--spacing-8);
+  font-size: var(--font-size-base);
+}
+
+/* Primary — Jelly Mint Pill */
 .primary {
   background: var(--color-accent-default);
   color: var(--color-accent-text);
@@ -40,28 +41,32 @@
 }
 
 .primary:hover:not(:disabled) {
-  background: var(--color-accent-hover);
-  border-color: var(--color-accent-hover);
-}
-
-/* Secondary */
-.secondary {
-  background: transparent;
-  color: var(--color-accent-default);
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-text-primary);
   border-color: var(--color-accent-default);
 }
 
-.secondary:hover:not(:disabled) {
-  background: var(--color-accent-subtle);
-}
-
-/* Ghost */
-.ghost {
-  background: transparent;
-  color: var(--color-text-primary);
+/* Secondary — Dark Pill */
+.secondary {
+  background: var(--color-bg-canvas);
+  color: var(--color-text-inverse);
   border-color: transparent;
 }
 
+.secondary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-text-primary);
+}
+
+/* Ghost — Outlined Mint */
+.ghost {
+  background: transparent;
+  color: var(--color-accent-default);
+  border-color: var(--color-accent-default);
+  border-radius: var(--radius-xl);
+}
+
 .ghost:hover:not(:disabled) {
-  background: var(--color-bg-surface);
+  background: var(--color-accent-default);
+  color: var(--color-accent-text);
 }
