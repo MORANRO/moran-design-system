@@ -1,0 +1,13 @@
+/* Design tokens — filled in on Day 2 after Figma work */
+:root {
+  /* Colors */
+  --color-primary: #000000;
+
+  /* Typography */
+  --font-family-base: system-ui, sans-serif;
+
+  /* Spacing */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+}
