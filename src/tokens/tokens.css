@@ -22,12 +22,14 @@
   --primitive-mint-100: #CCFEF5;
   --primitive-mint-300: #3CFFD0;
   --primitive-mint-500: #309875;
+  --primitive-mint-600: #117650;
   --primitive-mint-700: #3860BE;
 }
 
 /* --- Primitives: Purple --- */
 :root {
   --primitive-purple-500: #5200FF;
+  --primitive-purple-600: #2E0090;
   --primitive-purple-700: #3D00BF;
 }
 
@@ -91,9 +93,9 @@
   --color-state-hover-fill: rgba(255, 255, 255, 0.2);
   --color-state-hover-border: var(--primitive-gray-300);
   --color-state-hover-text: var(--color-text-primary);
-  --color-state-hover-ghost-fill: var(--color-accent-default);
+  --color-state-hover-ghost-fill: var(--primitive-mint-600);
   --color-state-hover-ghost-text: var(--primitive-black);
-  --color-state-hover-purple-fill: var(--color-accent-secondary-default);
+  --color-state-hover-purple-fill: var(--primitive-purple-600);
   --color-state-hover-purple-text: var(--primitive-white);
   --color-state-active-primary-fill: var(--color-accent-hover);
   --color-state-active-secondary-fill: var(--primitive-gray-800);
