@@ -76,8 +76,8 @@
 }
 
 .ghost:hover:not(:disabled) {
-  color: #11765D;
-  border-color: #11765D;
+  color: var(--primitive-mint-600);
+  border-color: var(--primitive-mint-600);
 }
 
 /* Purple */
@@ -88,6 +88,6 @@
 }
 
 .purple:hover:not(:disabled) {
-  color: #2E0090;
-  border-color: #2E0090;
+  color: var(--primitive-purple-600);
+  border-color: var(--primitive-purple-600);
 }
