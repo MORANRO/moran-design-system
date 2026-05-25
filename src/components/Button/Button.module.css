@@ -1,16 +1,17 @@
 /* Base */
 .button {
-  font-family: var(--font-family-mono);
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 1.5px;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   border: 1px solid transparent;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: background 180ms ease, color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  gap: 10px;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
   white-space: nowrap;
 }
 
@@ -32,24 +33,24 @@
 
 .lg {
   padding: 12px 32px;
-  font-size: 14px;
+  font-size: var(--font-size-sm);
   border-radius: var(--radius-lg);
 }
 
-/* Primary — Jelly Mint Pill */
+/* Primary */
 .primary {
   background: var(--color-accent-default);
+  color: var(--primitive-black);
+  border-color: transparent;
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--primitive-white);
   color: var(--primitive-black);
   border-color: var(--color-accent-default);
 }
 
-.primary:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.2);
-  color: var(--color-text-primary);
-  box-shadow: 0 0 0 1px #c2c2c2;
-}
-
-/* Secondary — Dark Pill */
+/* Secondary */
 .secondary {
   background: var(--primitive-gray-900);
   color: var(--primitive-white);
@@ -57,33 +58,36 @@
 }
 
 .secondary:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.2);
-  color: var(--color-text-primary);
-  box-shadow: 0 0 0 1px #c2c2c2;
+  background: var(--primitive-white);
+  color: var(--primitive-black);
+  border-color: var(--primitive-black);
 }
 
-/* Ghost — Outlined Mint, 40px radius */
+/* Ghost */
 .ghost {
   background: transparent;
   color: var(--color-accent-default);
   border-color: var(--color-accent-default);
-  border-radius: var(--radius-xl) !important;
+}
+
+/* Ghost sm has a larger radius than the other sizes (40px vs 24px per Figma) */
+.ghost.sm {
+  border-radius: var(--radius-xl);
 }
 
 .ghost:hover:not(:disabled) {
-  background: var(--color-accent-default);
-  color: var(--primitive-black);
+  color: #11765D;
+  border-color: #11765D;
 }
 
-/* Purple — Outlined Ultraviolet, 30px radius */
+/* Purple */
 .purple {
   background: transparent;
   color: var(--color-accent-secondary-default);
   border-color: var(--color-accent-secondary-default);
-  border-radius: 30px !important;
 }
 
 .purple:hover:not(:disabled) {
-  background: var(--color-accent-secondary-default);
-  color: var(--primitive-white);
+  color: #2E0090;
+  border-color: #2E0090;
 }
